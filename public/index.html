@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Control servo motor with johnny-five</title>
+  <link rel="stylesheet" type="text/css" href="lib/angular-slider.css">
+</head>
+
+<body>
+  <script src="lib/socket.io.js"></script>
+  <script src="lib/angular.js"></script>
+  <script src="lib/socket.js"></script>
+  <script src="lib/angular-slider.js"></script>
+  <script src="js/app.js"></script>
+  <h1>Servo controller</h1>
+  <div ng-controller="arduinoCtrl">
+    <button ng-click="servoMin()">Min</button>
+    <button ng-click="servoMax()">Max</button>
+    <slider floor="0" ceiling="180" step="5" ng-model="angle" ng-model-options="{ debounce: 3000 }"></slider>
+    <button ng-click="servoSub()">-5 deg</button>
+    <button ng-click="servoAdd()">+5 deg</button>
+  </div>
+</body>

@@ -1,0 +1,34 @@
+{
+  "name": "nodebots-servo-control",
+  "version": "0.0.1",
+  "description": "Use nodejs,socket.io and angularjs to control a servo motor",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "johnny-five": "^0.9.9",
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unseen1980/Nodebots-servo-control.git"
+  },
+  "keywords": [
+    "nodebots",
+    "socket.io",
+    "angularjs",
+    "nodejs",
+    "servo",
+    "arduino"
+  ],
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unseen1980/Nodebots-servo-control/issues"
+  },
+  "homepage": "https://github.com/unseen1980/Nodebots-servo-control#readme"
+}
