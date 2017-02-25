@@ -30,11 +30,5 @@ controller('arduinoCtrl', function($scope, mySocket) {
     mySocket.emit('servo:add');
     console.log('Servo add');
   };
-
-  // $scope.test = function() {
-  //   mySocket.emit('test');
-  //   console.log('client test');
-  // };
-
-  // setInterval($scope.test, 1500);
+  
 });
